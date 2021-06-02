@@ -1,7 +1,8 @@
-package br.com.multsoftware.v1.appnews
+package br.com.multsoftware.v1.appnews.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import br.com.multsoftware.v1.appnews.R
 
 class MainActivity : AppCompatActivity() {
 
