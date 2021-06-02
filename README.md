@@ -1,0 +1,2 @@
+# AppNews
+Aplicativo de Notícias
