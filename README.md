@@ -1,9 +1,9 @@
 # AppNews
 Aplicativo de Notícias
 
-# Tecnologias usadas
-#### 1 - Linguagem Kotlin
-#### 2 - Aquitetura MVP
+# Technologies used
+#### 1 - Kotlin language
+#### 2 - MVP architecture
 #### 3 - Coroutines
 #### 4 - Retrofit
 #### 5 - Room
