@@ -7,3 +7,4 @@ Aplicativo de Notícias
 #### 3 - Coroutines
 #### 4 - Retrofit
 #### 5 - Room
+#### 6 - Glide
