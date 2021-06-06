@@ -1,11 +1,16 @@
 package br.com.multsoftware.v1.appnews.view
 
+import android.view.View
+import android.widget.Toast
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.multsoftware.v1.appnews.R
 import br.com.multsoftware.v1.appnews.adapter.MainAdapter
 import br.com.multsoftware.v1.appnews.model.Article
 import br.com.multsoftware.v1.appnews.model.data.NewsDataSource
 import br.com.multsoftware.v1.appnews.presenter.ViewHome
 import br.com.multsoftware.v1.appnews.presenter.news.NewsPresenter
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AbstractActivity(), ViewHome.View {
 
@@ -22,21 +27,34 @@ class MainActivity : AbstractActivity(), ViewHome.View {
         val dataSource = NewsDataSource()
         presenter = NewsPresenter(this, dataSource)
         presenter.requestAll()
+        configRecycler()
+    }
+
+    private fun configRecycler() {
+        with(rvNews) {
+            adapter = mainAdapter
+            layoutManager = LinearLayoutManager(this@MainActivity)
+            addItemDecoration(
+                DividerItemDecoration(
+                    this@MainActivity, DividerItemDecoration.VERTICAL
+                )
+            )
+        }
     }
 
     override fun showProgressBar() {
-        TODO("Not yet implemented")
+        rvProgressBar.visibility = View.VISIBLE
     }
 
     override fun showFailure(message: String) {
-        TODO("Not yet implemented")
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show()
     }
 
     override fun hideProgressBar() {
-        TODO("Not yet implemented")
+        rvProgressBar.visibility = View.INVISIBLE
     }
 
     override fun showArticles(articles: List<Article>) {
-        TODO("Not yet implemented")
+        mainAdapter.differ.submitList(articles.toList())
     }
 }
