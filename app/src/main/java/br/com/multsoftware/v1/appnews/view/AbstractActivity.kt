@@ -1,4 +1,4 @@
-package br.com.multsoftware.v1.appnews.ui
+package br.com.multsoftware.v1.appnews.view
 
 import android.os.Bundle
 import androidx.annotation.LayoutRes
