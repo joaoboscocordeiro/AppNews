@@ -28,8 +28,8 @@ class SearchActivity : AbstractActivity(), ViewHome.View {
 
         val dataSource = NewsDataSource()
         presenter = SearchPresenter(this, dataSource)
-        configRecycler()
         search()
+        configRecycler()
         clickAdapter()
     }
 
@@ -39,7 +39,7 @@ class SearchActivity : AbstractActivity(), ViewHome.View {
                 this.lifecycle
             ) { newText ->
                 newText?.let { query ->
-                    if (query.isEmpty()) {
+                    if (query.isNotEmpty()) {
                         presenter.search(query)
                         rvProgressBarSearch.visibility = View.VISIBLE
                     }
