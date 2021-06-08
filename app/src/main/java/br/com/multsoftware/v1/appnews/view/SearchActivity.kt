@@ -28,8 +28,8 @@ class SearchActivity : AbstractActivity(), ViewHome.View {
 
         val dataSource = NewsDataSource()
         presenter = SearchPresenter(this, dataSource)
-        search()
         configRecycler()
+        search()
         clickAdapter()
     }
 
