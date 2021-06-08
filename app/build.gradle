@@ -1,19 +1,21 @@
-apply plugin: 'com.android.application'
-
-apply plugin: 'kotlin-android'
-
-apply plugin: 'kotlin-android-extensions'
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
 
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
     defaultConfig {
         applicationId "br.com.multsoftware.v1.appnews"
-        minSdkVersion 17
+        minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -23,6 +25,9 @@ android {
     compileOptions {
         sourceCompatibility = '1.8'
         targetCompatibility = '1.8'
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
     }
 }
 

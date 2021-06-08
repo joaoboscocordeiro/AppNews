@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsAppStarter"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".view.SearchActivity"></activity>
+        <activity android:name=".view.SearchActivity" />
         <activity android:name=".view.FavoriteActivity" />
         <activity android:name=".view.ArticleActivity" />
         <activity android:name=".view.MainActivity">
