@@ -2,6 +2,7 @@ package br.com.multsoftware.v1.appnews.model.data
 
 import br.com.multsoftware.v1.appnews.network.RetrofitInstance
 import br.com.multsoftware.v1.appnews.presenter.news.NewsHome
+import br.com.multsoftware.v1.appnews.presenter.search.SearchHome
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -17,6 +18,21 @@ class NewsDataSource {
             val response = RetrofitInstance.api.getBreakingNews("br")
             if (response.isSuccessful) {
                 response.body()?.let {newsResponse ->
+                    callback.onSuccess(newsResponse)
+                }
+                callback.onComplete()
+            } else {
+                callback.onError(response.message())
+                callback.onComplete()
+            }
+        }
+    }
+
+    fun searchNews(term: String, callback: SearchHome.Presenter) {
+        GlobalScope.launch(Dispatchers.Main) {
+            val response = RetrofitInstance.api.searchNews(term)
+            if (response.isSuccessful) {
+                response.body()?.let { newsResponse ->
                     callback.onSuccess(newsResponse)
                 }
                 callback.onComplete()
