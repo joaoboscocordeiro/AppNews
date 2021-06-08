@@ -16,4 +16,8 @@ interface ViewHome {
         fun showArticles(articles: List<Article>)
 
     }
+    interface Favorite {
+
+        fun showArticles(articles: List<Article>)
+    }
 }
