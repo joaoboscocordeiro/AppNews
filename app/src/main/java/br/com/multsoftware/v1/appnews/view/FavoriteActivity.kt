@@ -5,8 +5,10 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.viewbinding.ViewBinding
 import br.com.multsoftware.v1.appnews.R
 import br.com.multsoftware.v1.appnews.adapter.MainAdapter
+import br.com.multsoftware.v1.appnews.databinding.ActivityFavoriteBinding
 import br.com.multsoftware.v1.appnews.model.Article
 import br.com.multsoftware.v1.appnews.model.data.NewsDataSource
 import br.com.multsoftware.v1.appnews.presenter.ViewHome
@@ -21,8 +23,12 @@ class FavoriteActivity : AbstractActivity(), ViewHome.Favorite {
     }
 
     private lateinit var presenter: FavoritePresenter
+    private lateinit var binding: ActivityFavoriteBinding
 
-    override fun getLayout(): Int = R.layout.activity_favorite
+    override fun getLayout(): ViewBinding {
+        binding = ActivityFavoriteBinding.inflate(layoutInflater)
+        return binding
+    }
 
     override fun onInject() {
 
@@ -59,13 +65,10 @@ class FavoriteActivity : AbstractActivity(), ViewHome.Favorite {
                     show()
                 }
             }
-
         }
-
         ItemTouchHelper(itemTouchPerCallback).apply {
             attachToRecyclerView(rvFavorite)
         }
-
         presenter.getAll()
     }
 
@@ -92,5 +95,4 @@ class FavoriteActivity : AbstractActivity(), ViewHome.Favorite {
     override fun showArticles(articles: List<Article>) {
         mainAdapter.differ.submitList(articles.toList())
     }
-
 }

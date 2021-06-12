@@ -1,8 +1,8 @@
 package br.com.multsoftware.v1.appnews.view
 
 import android.os.Bundle
-import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
+import androidx.viewbinding.ViewBinding
 
 /**
  * Created by João Bosco on 05/06/2021.
@@ -12,12 +12,11 @@ abstract class AbstractActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(getLayout())
+        setContentView(getLayout().root)
         onInject()
     }
 
-    @LayoutRes
-    protected abstract fun getLayout() : Int
+    protected abstract fun getLayout() : ViewBinding
 
     protected abstract fun onInject()
 }

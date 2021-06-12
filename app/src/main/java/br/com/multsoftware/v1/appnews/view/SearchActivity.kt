@@ -5,8 +5,10 @@ import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.viewbinding.ViewBinding
 import br.com.multsoftware.v1.appnews.R
 import br.com.multsoftware.v1.appnews.adapter.MainAdapter
+import br.com.multsoftware.v1.appnews.databinding.ActivitySearchBinding
 import br.com.multsoftware.v1.appnews.model.Article
 import br.com.multsoftware.v1.appnews.model.data.NewsDataSource
 import br.com.multsoftware.v1.appnews.presenter.ViewHome
@@ -21,8 +23,12 @@ class SearchActivity : AbstractActivity(), ViewHome.View {
     }
 
     private lateinit var presenter: SearchPresenter
+    private lateinit var binding: ActivitySearchBinding
 
-    override fun getLayout(): Int = R.layout.activity_search
+    override fun getLayout(): ViewBinding {
+        binding = ActivitySearchBinding.inflate(layoutInflater)
+        return binding
+    }
 
     override fun onInject() {
 

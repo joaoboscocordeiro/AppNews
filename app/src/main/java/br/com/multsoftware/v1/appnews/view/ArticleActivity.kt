@@ -1,7 +1,9 @@
 package br.com.multsoftware.v1.appnews.view
 
 import android.webkit.WebViewClient
+import androidx.viewbinding.ViewBinding
 import br.com.multsoftware.v1.appnews.R
+import br.com.multsoftware.v1.appnews.databinding.ActivityArticleBinding
 import br.com.multsoftware.v1.appnews.model.Article
 import br.com.multsoftware.v1.appnews.model.data.NewsDataSource
 import br.com.multsoftware.v1.appnews.presenter.ViewHome
@@ -13,8 +15,12 @@ class ArticleActivity : AbstractActivity(), ViewHome.Favorite {
 
     private lateinit var article: Article
     private lateinit var presenter: FavoritePresenter
+    private lateinit var binding: ActivityArticleBinding
 
-    override fun getLayout(): Int = R.layout.activity_article
+    override fun getLayout(): ViewBinding {
+        binding = ActivityArticleBinding.inflate(layoutInflater)
+        return binding
+    }
 
     override fun onInject() {
         getArticle()
