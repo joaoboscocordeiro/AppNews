@@ -11,5 +11,6 @@ Aplicativo de Notícias
 
 ----------------------------------------------------------------------
 
+![Animação2](https://user-images.githubusercontent.com/59378910/121808338-531e7900-cc2e-11eb-8492-52c13e49ed19.gif);
 ![Animação1](https://user-images.githubusercontent.com/59378910/121808278-0d61b080-cc2e-11eb-9a0a-fa1241e90cb0.gif)
 
