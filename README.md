@@ -8,3 +8,8 @@ Aplicativo de Notícias
 #### 4 - Retrofit
 #### 5 - Room
 #### 6 - Glide
+
+----------------------------------------------------------------------
+
+![Animação1](https://user-images.githubusercontent.com/59378910/121808278-0d61b080-cc2e-11eb-9a0a-fa1241e90cb0.gif)
+
