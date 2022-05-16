@@ -14,4 +14,7 @@
     <string name="nav_favorite">Favoritos</string>
     <string name="nav_search">Pesquisar</string>
     <string name="nav_news">Notícias</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_search">Pesquisar</string>
+    <string name="menu_favorite">Favoritos</string>
 </resources>
