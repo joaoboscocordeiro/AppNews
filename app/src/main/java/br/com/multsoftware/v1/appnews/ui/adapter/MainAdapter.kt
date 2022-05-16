@@ -1,4 +1,4 @@
-package br.com.multsoftware.v1.appnews.adapter
+package br.com.multsoftware.v1.appnews.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import br.com.multsoftware.v1.appnews.R
-import br.com.multsoftware.v1.appnews.model.Article
+import br.com.multsoftware.v1.appnews.data.local.model.Article
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_news.view.*
 

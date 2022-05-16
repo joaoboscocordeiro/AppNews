@@ -3,11 +3,12 @@ Aplicativo de Notícias
 
 # Technologies used
 #### 1 - Kotlin language
-#### 2 - MVP architecture
-#### 3 - Coroutines
-#### 4 - Retrofit
-#### 5 - Room
-#### 6 - Glide
+#### 2 - Coroutines
+#### 3 - Retrofit
+#### 4 - Room
+#### 5 - Glide
+#### 6 - Navigation
+#### 7 - Upgrade MVVM
 
 --------------------------------------------------------------------------------------------------------------------
 

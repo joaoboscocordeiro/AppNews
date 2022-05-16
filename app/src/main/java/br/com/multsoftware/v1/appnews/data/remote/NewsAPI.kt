@@ -1,6 +1,6 @@
-package br.com.multsoftware.v1.appnews.network
+package br.com.multsoftware.v1.appnews.data.remote
 
-import br.com.multsoftware.v1.appnews.model.NewsResponse
+import br.com.multsoftware.v1.appnews.data.local.model.NewsResponse
 import br.com.multsoftware.v1.appnews.util.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET

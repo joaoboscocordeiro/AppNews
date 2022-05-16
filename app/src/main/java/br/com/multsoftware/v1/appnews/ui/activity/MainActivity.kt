@@ -1,4 +1,4 @@
-package br.com.multsoftware.v1.appnews.view
+package br.com.multsoftware.v1.appnews.ui.activity
 
 import android.content.Intent
 import android.view.Menu
@@ -9,12 +9,16 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewbinding.ViewBinding
 import br.com.multsoftware.v1.appnews.R
-import br.com.multsoftware.v1.appnews.adapter.MainAdapter
+import br.com.multsoftware.v1.appnews.ui.adapter.MainAdapter
 import br.com.multsoftware.v1.appnews.databinding.ActivityMainBinding
-import br.com.multsoftware.v1.appnews.model.Article
-import br.com.multsoftware.v1.appnews.model.data.NewsDataSource
+import br.com.multsoftware.v1.appnews.data.local.model.Article
+import br.com.multsoftware.v1.appnews.repository.NewsDataSource
 import br.com.multsoftware.v1.appnews.presenter.ViewHome
 import br.com.multsoftware.v1.appnews.presenter.news.NewsPresenter
+import br.com.multsoftware.v1.appnews.view.AbstractActivity
+import br.com.multsoftware.v1.appnews.view.ArticleActivity
+import br.com.multsoftware.v1.appnews.view.FavoriteActivity
+import br.com.multsoftware.v1.appnews.view.SearchActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AbstractActivity(), ViewHome.View {

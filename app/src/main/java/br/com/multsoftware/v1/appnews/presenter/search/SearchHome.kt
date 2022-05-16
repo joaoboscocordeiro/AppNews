@@ -1,6 +1,6 @@
 package br.com.multsoftware.v1.appnews.presenter.search
 
-import br.com.multsoftware.v1.appnews.model.NewsResponse
+import br.com.multsoftware.v1.appnews.data.local.model.NewsResponse
 
 /**
  * Created by João Bosco on 05/06/2021.

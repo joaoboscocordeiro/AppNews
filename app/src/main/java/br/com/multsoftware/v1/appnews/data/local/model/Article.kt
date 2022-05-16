@@ -1,4 +1,4 @@
-package br.com.multsoftware.v1.appnews.model
+package br.com.multsoftware.v1.appnews.data.local.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

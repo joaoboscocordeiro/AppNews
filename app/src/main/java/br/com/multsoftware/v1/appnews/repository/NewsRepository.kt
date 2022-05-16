@@ -1,7 +1,7 @@
-package br.com.multsoftware.v1.appnews.model.data
+package br.com.multsoftware.v1.appnews.repository
 
-import br.com.multsoftware.v1.appnews.model.Article
-import br.com.multsoftware.v1.appnews.model.db.ArticleDatabase
+import br.com.multsoftware.v1.appnews.data.local.model.Article
+import br.com.multsoftware.v1.appnews.data.local.db.ArticleDatabase
 
 /**
  * Created by João Bosco on 07/06/2021.

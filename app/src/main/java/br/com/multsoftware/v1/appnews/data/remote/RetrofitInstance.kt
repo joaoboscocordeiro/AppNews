@@ -1,4 +1,4 @@
-package br.com.multsoftware.v1.appnews.network
+package br.com.multsoftware.v1.appnews.data.remote
 
 import br.com.multsoftware.v1.appnews.util.Constants.Companion.BASE_URL
 import okhttp3.OkHttpClient

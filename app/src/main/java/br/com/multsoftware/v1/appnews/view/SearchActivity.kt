@@ -6,11 +6,10 @@ import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewbinding.ViewBinding
-import br.com.multsoftware.v1.appnews.R
-import br.com.multsoftware.v1.appnews.adapter.MainAdapter
+import br.com.multsoftware.v1.appnews.ui.adapter.MainAdapter
 import br.com.multsoftware.v1.appnews.databinding.ActivitySearchBinding
-import br.com.multsoftware.v1.appnews.model.Article
-import br.com.multsoftware.v1.appnews.model.data.NewsDataSource
+import br.com.multsoftware.v1.appnews.data.local.model.Article
+import br.com.multsoftware.v1.appnews.repository.NewsDataSource
 import br.com.multsoftware.v1.appnews.presenter.ViewHome
 import br.com.multsoftware.v1.appnews.presenter.search.SearchPresenter
 import br.com.multsoftware.v1.appnews.util.UtilQueryTextListener

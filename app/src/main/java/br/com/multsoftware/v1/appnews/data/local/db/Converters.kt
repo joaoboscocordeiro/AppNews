@@ -1,7 +1,7 @@
-package br.com.multsoftware.v1.appnews.model.db
+package br.com.multsoftware.v1.appnews.data.local.db
 
 import androidx.room.TypeConverter
-import br.com.multsoftware.v1.appnews.model.Source
+import br.com.multsoftware.v1.appnews.data.local.model.Source
 
 /**
  * Created by João Bosco on 07/06/2021.

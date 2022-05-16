@@ -4,8 +4,8 @@ import android.webkit.WebViewClient
 import androidx.viewbinding.ViewBinding
 import br.com.multsoftware.v1.appnews.R
 import br.com.multsoftware.v1.appnews.databinding.ActivityArticleBinding
-import br.com.multsoftware.v1.appnews.model.Article
-import br.com.multsoftware.v1.appnews.model.data.NewsDataSource
+import br.com.multsoftware.v1.appnews.data.local.model.Article
+import br.com.multsoftware.v1.appnews.repository.NewsDataSource
 import br.com.multsoftware.v1.appnews.presenter.ViewHome
 import br.com.multsoftware.v1.appnews.presenter.favorite.FavoritePresenter
 import com.google.android.material.snackbar.Snackbar

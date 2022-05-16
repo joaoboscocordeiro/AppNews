@@ -18,7 +18,7 @@
         <activity android:name=".view.SearchActivity" />
         <activity android:name=".view.FavoriteActivity" />
         <activity android:name=".view.ArticleActivity" />
-        <activity android:name=".view.MainActivity">
+        <activity android:name=".ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

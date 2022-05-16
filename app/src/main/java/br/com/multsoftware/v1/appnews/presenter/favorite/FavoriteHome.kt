@@ -1,6 +1,6 @@
 package br.com.multsoftware.v1.appnews.presenter.favorite
 
-import br.com.multsoftware.v1.appnews.model.Article
+import br.com.multsoftware.v1.appnews.data.local.model.Article
 
 /**
  * Created by João Bosco on 06/06/2021.

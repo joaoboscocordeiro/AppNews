@@ -1,4 +1,4 @@
-package br.com.multsoftware.v1.appnews.model
+package br.com.multsoftware.v1.appnews.data.local.model
 
 import java.io.Serializable
 

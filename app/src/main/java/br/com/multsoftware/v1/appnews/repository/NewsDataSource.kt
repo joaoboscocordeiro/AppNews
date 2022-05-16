@@ -1,9 +1,9 @@
-package br.com.multsoftware.v1.appnews.model.data
+package br.com.multsoftware.v1.appnews.repository
 
 import android.content.Context
-import br.com.multsoftware.v1.appnews.model.Article
-import br.com.multsoftware.v1.appnews.model.db.ArticleDatabase
-import br.com.multsoftware.v1.appnews.network.RetrofitInstance
+import br.com.multsoftware.v1.appnews.data.local.model.Article
+import br.com.multsoftware.v1.appnews.data.local.db.ArticleDatabase
+import br.com.multsoftware.v1.appnews.data.remote.RetrofitInstance
 import br.com.multsoftware.v1.appnews.presenter.favorite.FavoriteHome
 import br.com.multsoftware.v1.appnews.presenter.news.NewsHome
 import br.com.multsoftware.v1.appnews.presenter.search.SearchHome

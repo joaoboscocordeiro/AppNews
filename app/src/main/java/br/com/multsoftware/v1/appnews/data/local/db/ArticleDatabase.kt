@@ -1,11 +1,11 @@
-package br.com.multsoftware.v1.appnews.model.db
+package br.com.multsoftware.v1.appnews.data.local.db
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import br.com.multsoftware.v1.appnews.model.Article
+import br.com.multsoftware.v1.appnews.data.local.model.Article
 
 /**
  * Created by João Bosco on 07/06/2021.

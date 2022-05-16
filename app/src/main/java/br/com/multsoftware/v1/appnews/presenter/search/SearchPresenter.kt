@@ -1,7 +1,7 @@
 package br.com.multsoftware.v1.appnews.presenter.search
 
-import br.com.multsoftware.v1.appnews.model.NewsResponse
-import br.com.multsoftware.v1.appnews.model.data.NewsDataSource
+import br.com.multsoftware.v1.appnews.data.local.model.NewsResponse
+import br.com.multsoftware.v1.appnews.repository.NewsDataSource
 import br.com.multsoftware.v1.appnews.presenter.ViewHome
 
 /**
