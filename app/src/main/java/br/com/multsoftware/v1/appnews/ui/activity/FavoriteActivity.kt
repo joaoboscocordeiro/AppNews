@@ -1,4 +1,4 @@
-package br.com.multsoftware.v1.appnews.view
+package br.com.multsoftware.v1.appnews.ui.activity
 
 import android.content.Intent
 import androidx.recyclerview.widget.DividerItemDecoration

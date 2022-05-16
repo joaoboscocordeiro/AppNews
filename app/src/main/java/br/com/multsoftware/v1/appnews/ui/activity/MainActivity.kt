@@ -15,10 +15,6 @@ import br.com.multsoftware.v1.appnews.data.local.model.Article
 import br.com.multsoftware.v1.appnews.repository.NewsDataSource
 import br.com.multsoftware.v1.appnews.presenter.ViewHome
 import br.com.multsoftware.v1.appnews.presenter.news.NewsPresenter
-import br.com.multsoftware.v1.appnews.view.AbstractActivity
-import br.com.multsoftware.v1.appnews.view.ArticleActivity
-import br.com.multsoftware.v1.appnews.view.FavoriteActivity
-import br.com.multsoftware.v1.appnews.view.SearchActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AbstractActivity(), ViewHome.View {

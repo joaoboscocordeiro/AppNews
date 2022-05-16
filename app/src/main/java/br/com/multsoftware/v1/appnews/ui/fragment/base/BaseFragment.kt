@@ -30,6 +30,7 @@ abstract class BaseFragment<VM : ViewModel, VB : ViewBinding> : Fragment() {
 
         viewModel = ViewModelProvider(viewModelStore, factory).get(getViewModel())
         return binding.root
+
     }
 
     abstract fun getViewModel(): Class<VM>
