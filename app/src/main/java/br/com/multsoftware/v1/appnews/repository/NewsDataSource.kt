@@ -1,8 +1,8 @@
 package br.com.multsoftware.v1.appnews.repository
 
 import android.content.Context
-import br.com.multsoftware.v1.appnews.data.local.model.Article
 import br.com.multsoftware.v1.appnews.data.local.db.ArticleDatabase
+import br.com.multsoftware.v1.appnews.data.local.model.Article
 import br.com.multsoftware.v1.appnews.data.remote.RetrofitInstance
 import br.com.multsoftware.v1.appnews.presenter.favorite.FavoriteHome
 import br.com.multsoftware.v1.appnews.presenter.news.NewsHome
@@ -16,7 +16,7 @@ import kotlinx.coroutines.*
 class NewsDataSource(context: Context) {
 
     private var db: ArticleDatabase = ArticleDatabase(context)
-    private var newsRepository: NewsRepository = NewsRepository(db)
+    private var newsRepository: NewsRepository = NewsRepository(RetrofitInstance.api, db)
 
     fun getBreakingNews(callback: NewsHome.Presenter) {
         GlobalScope.launch(Dispatchers.Main) {
@@ -57,7 +57,7 @@ class NewsDataSource(context: Context) {
     fun getAllArticle(callback: FavoriteHome.Presenter) {
         var allArticles: List<Article>
         CoroutineScope(Dispatchers.IO).launch {
-            allArticles = newsRepository.getAll()
+            allArticles = newsRepository.getAll().value!!
 
             withContext(Dispatchers.Main) {
                 callback.onSuccess(allArticles)

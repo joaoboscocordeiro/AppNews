@@ -1,5 +1,6 @@
 package br.com.multsoftware.v1.appnews.data.local.db
 
+import androidx.lifecycle.LiveData
 import androidx.room.*
 import br.com.multsoftware.v1.appnews.data.local.model.Article
 
@@ -15,7 +16,7 @@ interface ArticleDao {
     suspend fun updateInsert(article: Article): Long
 
     @Query("SELECT * FROM articles")
-    fun getAll(): List<Article>
+    fun getAll(): LiveData<List<Article>>
 
     @Delete
     suspend fun delete(article: Article)

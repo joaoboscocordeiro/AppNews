@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnNavigation.apply {
             setupWithNavController(navController)
-            //setOnNavigationItemReselectedListener {}
+            setOnNavigationItemReselectedListener {}
         }
     }
 
