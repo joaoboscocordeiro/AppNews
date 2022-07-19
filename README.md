@@ -10,8 +10,10 @@ Aplicativo de Notícias
 #### 6 - Glide
 #### 7 - Upgrade MVVM
 
-1. Implementação da Arquitetura MVVM.
-    - [desenvolvimento-android-com-mvvm](https://github.com/joaoboscocordeiro/BallNews/tree/branch/release-retrofit)
+--------------------------------------------------------------------------------------------------------------------
+
+#### 1. Implementação da Arquitetura MVVM.
+    - [desenvolvimento-android-com-mvvm](https://github.com/joaoboscocordeiro/AppNews/tree/mvvm)
 
 --------------------------------------------------------------------------------------------------------------------
 
