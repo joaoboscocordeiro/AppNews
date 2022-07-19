@@ -12,7 +12,7 @@ Aplicativo de Notícias
 
 --------------------------------------------------------------------------------------------------------------------
 
-#### 1. Implementação da Arquitetura MVVM.
+1. Implementação da Arquitetura MVVM.
     - [desenvolvimento-android-com-mvvm](https://github.com/joaoboscocordeiro/AppNews/tree/mvvm)
 
 --------------------------------------------------------------------------------------------------------------------
